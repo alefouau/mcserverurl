@@ -4,9 +4,11 @@ Create a custom link to add a minecraft bedrock server directly
 ```
 alefouau.github.io/mcserverurl?n=<NAME>&i=<IP>&p=<PORT>
 ```
+
 Example:
 https://alefouau.github.io/mcserverurl?n=MyServer&i=play.myserver.com&p=12345
 Clicking this link will open Minecraft Bedrock and will add a server with:
+
 Name: MyServer
 IP: play.myserver.com
 Port: 12345
