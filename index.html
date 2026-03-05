@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Server Redirector</title>
+</head>
+<body style="font-family: sans-serif; width:max-content; margin: auto;">
+    <p>Redirecting you to the server</p>
+</body>
+<script>
+        //minecraft://?addExternalServer=Kaiquequququ|zestfully-trillion.gl.at.ply.gg:19137
+    let url = new URL(window.location.href);
+    let name = url.searchParams.get('n');
+    let ip = url.searchParams.get('i');
+    let port = url.searchParams.get('p');
+    let mcurl = `minecraft://?addExternalServer=${name}|${ip}:${port}`;
+    document.body.innerHTML = `
+    <h3>Redirecting you to the Minecraft Bedrock server "${name}"...</h3>
+    <strong>IP: </strong><code>${ip}</code><br>
+    <strong>Port: </strong><code>${port}</code>
+    <p>If you arent redirected, <a href="${mcurl}">click here</a></p>
+    <p>Make sure that redirections and custom protocols are supported by your browser</p>
+    `;
+    document.title = `${name} Minecraft Bedrock Server`
+    window.location.href = mcurl;
+</script>
+</html>
