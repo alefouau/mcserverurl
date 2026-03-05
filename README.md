@@ -1,6 +1,6 @@
 # Minecraft bedrock server redirector
 Create a custom link to add a minecraft bedrock server directly
-###Url Syntax
+##Url Syntax
 ```
 alefouau.github.io/mcserverurl?n=<NAME>&i=<IP>&p=<PORT>
 ```
